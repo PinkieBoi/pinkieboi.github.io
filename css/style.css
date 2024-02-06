@@ -1,0 +1,146 @@
+body {
+  background-color: #1e1f29;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  font-family: Ubuntu;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+h2 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.4rem;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  border-radius: 25px 0 0 25px;
+  display: block;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+form {
+  width: 100%;
+}
+
+input {
+  width: 75%;
+  height: 2rem;
+  text-align: center;
+  border-radius: 25px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: auto;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+ul li:before {
+  content: ">";
+  color: #36be79;
+  padding-right: 5px;
+}
+
+a {
+  color: #36be79;
+  text-decoration: none;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+i {
+  padding: 1rem 2rem;
+  color: #36be79;
+}
+
+.main-div {
+  max-height: 350px;
+  margin: auto;
+  display: inline-flex;
+  background-color: #282a36;
+  border-radius: 25px;
+}
+
+.photo-div {
+  max-width: 200px;
+}
+
+.main-content {
+  flex-flow: column;
+  display: flex;
+  flex-grow: 1;
+  box-sizing: content-box;
+  padding: 1rem;
+  padding-left: 0;
+}
+
+.icon-div {
+  line-height: 2rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.search-div {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  margin: 0;
+}
+
+.bottom-div {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  text-align: left;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 0.25rem !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #36be79;
+  border-radius: 20px !important;
+  padding-right: 1rem;
+}
+
+.link-container {
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+}
+
+@media (max-width: 1000px) {
+  .main-div {
+    width: 85vw;
+  }
+
+  .bottom-div {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 5rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .link-container {
+    padding-left: 2rem;
+  }
+
+  .photo-div {
+    display: none;
+  }
+}
